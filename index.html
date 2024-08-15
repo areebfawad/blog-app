@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- navbar -->
+
+    <nav class="navbar bg-body-tertiary d-flex align-items-center">
+        <div class="container-fluid">
+          <a class="navbar-brand" id="logo">Blogia By Areeb Fawad</a>
+          <form class="d-flex">
+            <p id="userName" class="text-capitalize me-2 mt-2"></p>
+            <p id="nav-logIn" class=" btn btn-dark">login</p>
+            <p id="nav-logOut" class="d-none btn btn-black">logOut</p>
+          </form>
+        </div>
+      </nav>
+
+      <!-- loader -->
+
+    <div id="loader">
+        <img src="loader.gif" alt="">
+    </div>
+
+    <!-- forms -->
+
+    <div id="login-signup">
+        <div id="signUp" class="d-none">
+            <form id="signUp-form">
+                <h1>Sign Up</h1>
+                <input id="signUp-fn" type="text" placeholder="First Name" minlength="3" maxlength="20" required>
+                <input id="signUp-ln" type="text" placeholder="Last Name" minlength="1" maxlength="20" required>
+                <input id="signUp-email" type="email" placeholder="Email" required>
+                <input id="signUp-pass" type="password" placeholder="Password" pattern="(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                    title="Must contain at least one uppercase and lowercase letter, and at least 8 or more characters"
+                    required>
+                <input id="signUp-comfirmPass" type="password" placeholder="Confirm Password" required>
+                <img src="default.png" id="form-profile-image" class="d-flex justify-start mb-2 rounded-circle" width="50px" height="50px" alt="">
+                <input id="signUp-img" type="file" required>
+                <input id="signUp-btn" type="submit" class="btn btn-dark" value="SignUp">
+            </form>
+        </div>
+        <div id="logIn" class="d-none">
+            <h1>Log In</h1>
+            <form id="logIn-form">
+                <input id="logIn-email" type="email" placeholder="Email" required>
+                <input id="logIn-pass" type="password" placeholder="Password" required>
+                <p id="create-account-btn">Don't have an account? Create one</p>
+                <input id="logIn-btn" class="btn btn-dark" type="submit" value="LogIn">
+            </form>
+        </div>
+    </div>
+
+    <!-- home / dashboard / profile -->
+
+    <div id="main" class="d-none container">
+        <h1>Good Morning Readers!</h1>
+        <div id="all-post"></div>
+    </div>
+
+    <div id="dashboard" class="d-none container ">
+        <h1>Dashboard</h1>
+        <div>
+            <div class="mb-3">
+                <input id="blog-title" type="text" class="" id="exampleFormControlInput1" placeholder="Title">
+              </div>
+              <div class="mb-3">
+                <textarea id="blog-desc" class="" id="exampleFormControlTextarea1" placeholder="What is in your mind" rows="4"></textarea>
+              </div>
+              <button id="publish-btn" class="btn btn-dark mb-4">Publish Blog</button>
+        </div>
+        <div>
+            <h1>My Blogs</h1>
+            <div id="my-blogs">
+            </div>
+        </div>
+    </div>
+
+    <div id="profile" class="d-none container">
+        <h1>Profile</h1>
+        <img src="" id="profile-image" class="rounded-circle mt-3" width="300px" height="300px" alt="">
+        <div class="mt-5">
+            <h5><span class="fw-bold">Firstname:</span> <span id="profile-fn"></span></h5>
+            <h5><span class="fw-bold">Lastname:</span> <span id="profile-ln"></span></h5>
+            <h5><span class="fw-bold">Email:</span> <span id="profile-email"></span></h5>
+        </div>
+        <div class="mt-3">
+            <h5 class="fw-bolder mb-2">Change Password</h5>
+            <input type="password" id="old-password" placeholder="Old Password">
+            <input type="password" id="new-password" placeholder="New Password">
+            <input type="password" id="confirm-new-password" placeholder="Confirm Password">
+            <button class="btn btn-dark" id="set-pass-btn">Save Password</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>

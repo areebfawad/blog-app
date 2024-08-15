@@ -1,0 +1,134 @@
+
+#nav-logIn, #nav-logOut, #create-account-btn, #userName, #logo, .edit-btn, .del-btn{
+    cursor: pointer;
+}
+
+/* Style for loader */
+#loader {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Style for navigation bar */
+.navbar {
+    background-color: #000000;
+    border-bottom: 1px solid #ddd;
+    /* padding: 0px 0; */
+    /* text-align: center; */
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+/* Style for login and sign-up forms */
+#login-signup {
+    padding: 20px;
+    text-align: center;
+}
+
+form {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+form h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: none;
+    border-bottom: 2px solid #ddd;
+    border-radius: 4px;
+}
+
+input[type="file"] {
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+}
+
+/* Style for logged-in user interface */
+#dashboard,
+#main {
+    padding: 20px;
+}
+
+#dashboard h1,
+#main h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#all-post {
+    margin-top: 20px;
+}
+
+/* Style for individual blog posts */
+.cards {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.cards img {
+    vertical-align: middle;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.cards h3 {
+    margin: 0;
+}
+
+.cards span {
+    margin-right: 5px;
+    color: #777;
+    font-size: 14px;
+}
+
+.cards div:last-child {
+    margin-top: 10px;
+}
+
+/* Style for log out button */
+#nav-logOut {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Additional styles can be added here as needed */
+
+.container-fluid > form {
+    margin: 0;
+}
+
+.cards:hover {
+    box-shadow: 2px 2px 10px #ccc;
+}
+
+input, textarea {
+    outline: none;
+}
+
+#blog-title, #blog-desc, #edit-title-input, #edit-desc-input, #old-password, #new-password, #confirm-new-password {
+    border: 1px solid #ddd;
+    outline: none !important;
+}
+
+#old-password, #new-password, #confirm-new-password {
+    width: 20%;
+    display: block;
+}
